@@ -106,7 +106,6 @@ Python中对 文件 的各种骚操作python中对文件、文件夹（文件操
 <p>fp.seek(offset[,whence]) #将文件打操作标记移到offset的位置。这个offset一般是相对于文件的开头来计算的，一般为正数。但如果提供了whence参数就不一定了，whence可以为0表示从头开始计算，1表示以当前位置为原点计算。2表示以文件末尾为原点进行计算。需要注意，如果文件以a或a+的模式打开，每次进行写操作时，文件操作标记会自动返回到文件末尾。</p>
 <p>fp.truncate([size]) #把文件裁成规定的大小，默认的是裁到当前文件操作标记的位置。如果size比文件的大小还要大，依据系统的不同可能是不改变文件，也可能是用0把文件补到相应的大小，也可能是以一些随机的内容加上去。</p>
 <h6 id="目录操作："><a href="#目录操作：" class="headerlink" title="目录操作："></a>目录操作：</h6><p>os.mkdir(“file”) 创建目录<br>复制文件：<br>shutil.copyfile(“oldfile”,“newfile”) oldfile和newfile都只能是文件<br>shutil.copy(“oldfile”,“newfile”) oldfile只能是文件夹，newfile可以是文件，也可以是目标目录<br>复制文件夹：<br>shutil.copytree(“olddir”,“newdir”) olddir和newdir都只能是目录，且newdir必须不存在<br>重命名文件（目录）<br>os.rename(“oldname”,“newname”) 文件或目录都是使用这条命令<br>移动文件（目录）<br>shutil.move(“oldpos”,“newpos”)<br>删除文件<br>os.remove(“file”)<br>删除目录<br>os.rmdir(“dir”)只能删除空目录<br>shutil.rmtree(“dir”) 空目录、有内容的目录都可以删<br>转换目录<br>os.chdir(“path”) 换路径</p>
-<p>成长离不开与优秀的同伴共同交流，如果你需要好的学习环境，好的学习资源，这里欢迎每一位热爱Python的小伙伴，Python学习圈</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
